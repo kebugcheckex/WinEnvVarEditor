@@ -1,0 +1,10 @@
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\Heteroauxin.exe.config
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\Heteroauxin.exe
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\Heteroauxin.pdb
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.csprojResolveAssemblyReference.cache
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.formMain.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Properties.Resources.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.csproj.GenerateResource.Cache
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.exe
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.pdb
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.FormAbout.resources

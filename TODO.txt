@@ -1,0 +1,9 @@
+Here is a list of functions to be implemented or improved.
+
+* The EnvironmentVariables class does not impelment any exceptions. All the
+  functions that returns a bool value to indicate whether the action is
+  successful can be rewritten by throwing exceptions.
+* When this program is not run as Administrators, it cannot apply changes to the
+  system variables.
+* Solve the problems marked TODO in the code.
+* Create localization for different languages.

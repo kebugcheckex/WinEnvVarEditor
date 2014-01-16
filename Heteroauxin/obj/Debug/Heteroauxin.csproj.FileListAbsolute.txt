@@ -1,0 +1,16 @@
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\Heteroauxin.exe.config
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\Heteroauxin.exe
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\Heteroauxin.pdb
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.csprojResolveAssemblyReference.cache
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.formMain.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.Properties.Resources.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.csproj.GenerateResource.Cache
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.exe
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.pdb
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.Resources.AboutBox.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.Properties.Resource.zh-CN.resources
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\zh-CN\Heteroauxin.resources.dll
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\zh-CN\Heteroauxin.resources.dll
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\zh-Hans\Heteroauxin.resources.dll
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.FormMain.zh-Hans.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\zh-Hans\Heteroauxin.resources.dll
