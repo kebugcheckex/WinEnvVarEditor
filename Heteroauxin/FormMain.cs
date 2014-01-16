@@ -21,7 +21,7 @@ namespace Heteroauxin
 
         public FormMain()
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
             InitializeComponent();
 
             envVariables = new EnvironmentVariables();
@@ -42,7 +42,7 @@ namespace Heteroauxin
 #if DEBUG
             // Do not show the about dialog on init
 #else
-            aboutBox.Show();
+            //aboutBox.Show();
 #endif
         }
 

@@ -18,7 +18,6 @@ namespace Heteroauxin
         private IDictionary variables;
         private List<string> variableList;
         private string errorMsg;
-        private int currentProgress;
 
         public EnvironmentVariableTarget CurrentTarget;
         public List<string> VariableList
@@ -39,7 +38,6 @@ namespace Heteroauxin
             CurrentTarget = target;
             variableList = new List<string>();
             errorMsg = "Unknown";
-            currentProgress = 0;
         }
 
         public bool LoadVariables()
