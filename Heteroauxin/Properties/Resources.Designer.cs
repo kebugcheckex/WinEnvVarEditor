@@ -128,7 +128,7 @@ namespace Heteroauxin.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are about to apply all the environment variables to the system.This action cannot be undone. Any incorrect variables may cause problems to your system.Do you want to continue?.
+        ///   Looks up a localized string similar to You are about to apply all the environment variables to the system.This action cannot be undone. Any incorrect variables may cause problems to your system. Do you want to continue?.
         /// </summary>
         internal static string MessageBox_Apply_System {
             get {
@@ -137,7 +137,7 @@ namespace Heteroauxin.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are about to apply all the environment variables to the current user profile.This action cannot be undone. Any incorrect variables may cause problems to your system.Do you want to continue?.
+        ///   Looks up a localized string similar to You are about to apply all the environment variables to the current user profile.This action cannot be undone. Any incorrect variables may cause problems to your system. Do you want to continue?.
         /// </summary>
         internal static string MessageBox_Apply_User {
             get {

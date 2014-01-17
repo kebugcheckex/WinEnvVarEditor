@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.textBoxFilter = new System.Windows.Forms.TextBox();
             this.checkBoxMatchCase = new System.Windows.Forms.CheckBox();
@@ -47,8 +48,6 @@
             this.toolStripButtonLoadFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonExportFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripComboBoxLanguage = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonAbout = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonExit = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -59,6 +58,7 @@
             this.buttonDeleteVariable = new System.Windows.Forms.Button();
             this.buttonAddVariable = new System.Windows.Forms.Button();
             this.buttonValidateDirectory = new System.Windows.Forms.Button();
+            this.toolTipButtons = new System.Windows.Forms.ToolTip(this.components);
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +68,7 @@
             resources.ApplyResources(this.textBoxFilter, "textBoxFilter");
             this.textBoxFilter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxFilter.Name = "textBoxFilter";
+            this.toolTipButtons.SetToolTip(this.textBoxFilter, resources.GetString("textBoxFilter.ToolTip"));
             this.textBoxFilter.TextChanged += new System.EventHandler(this.textBoxFilter_TextChanged);
             this.textBoxFilter.Enter += new System.EventHandler(this.textBoxFilter_Enter);
             this.textBoxFilter.Leave += new System.EventHandler(this.textBoxFilter_Leave);
@@ -76,6 +77,7 @@
             // 
             resources.ApplyResources(this.checkBoxMatchCase, "checkBoxMatchCase");
             this.checkBoxMatchCase.Name = "checkBoxMatchCase";
+            this.toolTipButtons.SetToolTip(this.checkBoxMatchCase, resources.GetString("checkBoxMatchCase.ToolTip"));
             this.checkBoxMatchCase.UseVisualStyleBackColor = true;
             this.checkBoxMatchCase.CheckedChanged += new System.EventHandler(this.checkBoxMatchCase_CheckedChanged);
             // 
@@ -100,6 +102,7 @@
             this.listViewVariables.LabelEdit = true;
             this.listViewVariables.Name = "listViewVariables";
             this.listViewVariables.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.toolTipButtons.SetToolTip(this.listViewVariables, resources.GetString("listViewVariables.ToolTip"));
             this.listViewVariables.UseCompatibleStateImageBehavior = false;
             this.listViewVariables.View = System.Windows.Forms.View.Details;
             this.listViewVariables.AfterLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.listViewVariables_AfterLabelEdit);
@@ -122,6 +125,7 @@
             this.listViewValues.LabelEdit = true;
             this.listViewValues.Name = "listViewValues";
             this.listViewValues.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.toolTipButtons.SetToolTip(this.listViewValues, resources.GetString("listViewValues.ToolTip"));
             this.listViewValues.UseCompatibleStateImageBehavior = false;
             this.listViewValues.View = System.Windows.Forms.View.Details;
             this.listViewValues.AfterLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.listViewValues_AfterLabelEdit);
@@ -148,11 +152,10 @@
             this.toolStripButtonLoadFile,
             this.toolStripButtonExportFile,
             this.toolStripSeparator2,
-            this.toolStripComboBoxLanguage,
-            this.toolStripSeparator3,
             this.toolStripButtonAbout,
             this.toolStripButtonExit});
             this.toolStrip.Name = "toolStrip";
+            this.toolTipButtons.SetToolTip(this.toolStrip, resources.GetString("toolStrip.ToolTip"));
             this.toolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
             // 
             // toolStripButtonLoadUser
@@ -207,21 +210,6 @@
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
-            // toolStripComboBoxLanguage
-            // 
-            resources.ApplyResources(this.toolStripComboBoxLanguage, "toolStripComboBoxLanguage");
-            this.toolStripComboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBoxLanguage.Items.AddRange(new object[] {
-            resources.GetString("toolStripComboBoxLanguage.Items"),
-            resources.GetString("toolStripComboBoxLanguage.Items1")});
-            this.toolStripComboBoxLanguage.Name = "toolStripComboBoxLanguage";
-            this.toolStripComboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBoxLanguage_SelectedIndexChanged);
-            // 
-            // toolStripSeparator3
-            // 
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            // 
             // toolStripButtonAbout
             // 
             resources.ApplyResources(this.toolStripButtonAbout, "toolStripButtonAbout");
@@ -242,6 +230,7 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
             this.statusStrip.Name = "statusStrip";
+            this.toolTipButtons.SetToolTip(this.statusStrip, resources.GetString("statusStrip.ToolTip"));
             // 
             // toolStripStatusLabel
             // 
@@ -254,6 +243,7 @@
             this.buttonAddDirectory.FlatAppearance.BorderSize = 0;
             this.buttonAddDirectory.Image = global::Heteroauxin.Properties.Resources.folder_Closed_16xLG;
             this.buttonAddDirectory.Name = "buttonAddDirectory";
+            this.toolTipButtons.SetToolTip(this.buttonAddDirectory, resources.GetString("buttonAddDirectory.ToolTip"));
             this.buttonAddDirectory.UseVisualStyleBackColor = true;
             this.buttonAddDirectory.Click += new System.EventHandler(this.buttonDirectory_Click);
             // 
@@ -263,6 +253,7 @@
             this.buttonDeleteValue.FlatAppearance.BorderSize = 0;
             this.buttonDeleteValue.Image = global::Heteroauxin.Properties.Resources.action_minus_16xLG;
             this.buttonDeleteValue.Name = "buttonDeleteValue";
+            this.toolTipButtons.SetToolTip(this.buttonDeleteValue, resources.GetString("buttonDeleteValue.ToolTip"));
             this.buttonDeleteValue.UseVisualStyleBackColor = true;
             this.buttonDeleteValue.Click += new System.EventHandler(this.buttonDeleteValue_Click);
             // 
@@ -271,6 +262,7 @@
             resources.ApplyResources(this.buttonAddValue, "buttonAddValue");
             this.buttonAddValue.FlatAppearance.BorderSize = 0;
             this.buttonAddValue.Name = "buttonAddValue";
+            this.toolTipButtons.SetToolTip(this.buttonAddValue, resources.GetString("buttonAddValue.ToolTip"));
             this.buttonAddValue.UseVisualStyleBackColor = true;
             this.buttonAddValue.Click += new System.EventHandler(this.buttonAddValue_Click);
             // 
@@ -280,6 +272,7 @@
             this.buttonDeleteVariable.FlatAppearance.BorderSize = 0;
             this.buttonDeleteVariable.Image = global::Heteroauxin.Properties.Resources.action_minus_16xLG;
             this.buttonDeleteVariable.Name = "buttonDeleteVariable";
+            this.toolTipButtons.SetToolTip(this.buttonDeleteVariable, resources.GetString("buttonDeleteVariable.ToolTip"));
             this.buttonDeleteVariable.UseVisualStyleBackColor = true;
             this.buttonDeleteVariable.Click += new System.EventHandler(this.buttonDeleteVariable_Click);
             // 
@@ -288,6 +281,7 @@
             resources.ApplyResources(this.buttonAddVariable, "buttonAddVariable");
             this.buttonAddVariable.FlatAppearance.BorderSize = 0;
             this.buttonAddVariable.Name = "buttonAddVariable";
+            this.toolTipButtons.SetToolTip(this.buttonAddVariable, resources.GetString("buttonAddVariable.ToolTip"));
             this.buttonAddVariable.UseVisualStyleBackColor = true;
             this.buttonAddVariable.Click += new System.EventHandler(this.buttonAddVariable_Click);
             // 
@@ -297,6 +291,7 @@
             this.buttonValidateDirectory.FlatAppearance.BorderSize = 0;
             this.buttonValidateDirectory.Image = global::Heteroauxin.Properties.Resources.LightBulb_16xLG;
             this.buttonValidateDirectory.Name = "buttonValidateDirectory";
+            this.toolTipButtons.SetToolTip(this.buttonValidateDirectory, resources.GetString("buttonValidateDirectory.ToolTip"));
             this.buttonValidateDirectory.UseVisualStyleBackColor = true;
             this.buttonValidateDirectory.Click += new System.EventHandler(this.buttonValidateDirectory_Click);
             // 
@@ -317,6 +312,7 @@
             this.Controls.Add(this.checkBoxMatchCase);
             this.Controls.Add(this.textBoxFilter);
             this.Name = "FormMain";
+            this.toolTipButtons.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.formMain_Load);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
@@ -354,11 +350,10 @@
         private System.Windows.Forms.Button buttonAddValue;
         private System.Windows.Forms.Button buttonDeleteValue;
         private System.Windows.Forms.Button buttonAddDirectory;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBoxLanguage;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.Button buttonValidateDirectory;
+        private System.Windows.Forms.ToolTip toolTipButtons;
     }
 }
 

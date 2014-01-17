@@ -7,10 +7,13 @@ F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Properties.Resources.r
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.csproj.GenerateResource.Cache
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.exe
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.pdb
-F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\zh-Hans\Heteroauxin.resources.dll
 F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\zh-CN\Heteroauxin.resources.dll
-F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Resources.AboutBox.resources
-F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.FormMain.zh-Hans.resources
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Properties.Resources.zh-CN.resources
-F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\zh-Hans\Heteroauxin.resources.dll
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\zh-CN\Heteroauxin.resources.dll
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Properties.AboutBox.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.Properties.AboutBox.zh-CN.resources
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.FormMain.zh-CN.resources
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\Heteroauxin.exe.manifest
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Release\Heteroauxin.application
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.exe.manifest
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Release\Heteroauxin.application

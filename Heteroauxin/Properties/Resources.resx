@@ -149,10 +149,10 @@
     <value>Error</value>
   </data>
   <data name="MessageBox_Apply_User" xml:space="preserve">
-    <value>You are about to apply all the environment variables to the current user profile.This action cannot be undone. Any incorrect variables may cause problems to your system.Do you want to continue?</value>
+    <value>You are about to apply all the environment variables to the current user profile.This action cannot be undone. Any incorrect variables may cause problems to your system. Do you want to continue?</value>
   </data>
   <data name="MessageBox_Apply_System" xml:space="preserve">
-    <value>You are about to apply all the environment variables to the system.This action cannot be undone. Any incorrect variables may cause problems to your system.Do you want to continue?</value>
+    <value>You are about to apply all the environment variables to the system.This action cannot be undone. Any incorrect variables may cause problems to your system. Do you want to continue?</value>
   </data>
   <data name="MessageBox_Already_New" xml:space="preserve">
     <value>You have already add a new value. You cannot add more before you name it.</value>

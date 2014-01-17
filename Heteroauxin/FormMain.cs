@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 using Heteroauxin.Properties;
-using Heteroauxin.Resources;
 
 namespace Heteroauxin
 {
@@ -38,12 +37,6 @@ namespace Heteroauxin
             textBoxFilter.Font = new Font(textBoxFilter.Font, FontStyle.Italic);
             textBoxFilter.ForeColor = Color.Gray;
             listViewVariables.Select();
-            toolStripComboBoxLanguage.SelectedIndex = 0;
-#if DEBUG
-            // Do not show the about dialog on init
-#else
-            //aboutBox.Show();
-#endif
         }
 
         private void textBoxFilter_TextChanged(object sender, EventArgs e)
@@ -81,7 +74,7 @@ namespace Heteroauxin
         }
         private void textBoxFilter_Enter(object sender, EventArgs e)
         {
-            if (textBoxFilter.Text == "Filter")
+            if (textBoxFilter.Text == Resources.FormMain_textBoxFilter_Enter_Filter)
             {
                 textBoxFilter.Text = String.Empty;
                 textBoxFilter.Font = new Font(textBoxFilter.Font, FontStyle.Regular);
@@ -95,7 +88,7 @@ namespace Heteroauxin
             {
                 textBoxFilter.Font = new Font(textBoxFilter.Font, FontStyle.Italic);
                 textBoxFilter.ForeColor = Color.Gray;
-                textBoxFilter.Text = Properties.Resources.FormMain_textBoxFilter_Enter_Filter;
+                textBoxFilter.Text = Resources.FormMain_textBoxFilter_Enter_Filter;
             }
         }
 
@@ -507,14 +500,6 @@ namespace Heteroauxin
             isNewValue = true;
             listViewValues.Items.Add(" (New value)");
             listViewValues.Items[0].BeginEdit();
-        }
-
-        private void toolStripComboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (toolStripComboBoxLanguage.Text == "Chinese")
-            {
-                
-            }
         }
 
         private void buttonValidateDirectory_Click(object sender, EventArgs e)
