@@ -155,9 +155,7 @@
             this.toolStripButtonAbout,
             this.toolStripButtonExit});
             this.toolStrip.Name = "toolStrip";
-            this.toolTipButtons.SetToolTip(this.toolStrip, resources.GetString("toolStrip.ToolTip"));
-            this.toolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
-            // 
+            this.toolTipButtons.SetToolTip(this.toolStrip, resources.GetString("toolStrip.ToolTip"));            // 
             // toolStripButtonLoadUser
             // 
             resources.ApplyResources(this.toolStripButtonLoadUser, "toolStripButtonLoadUser");

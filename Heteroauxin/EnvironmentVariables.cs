@@ -266,11 +266,11 @@ namespace Heteroauxin
                         {
                             regKey.SetValue(variable, value);
                         }
-                        regKey.Close();
+                        
                     }
                     else return false;
                 }
-                
+                regKey.Close();
             }
             catch (SecurityException se)
             {

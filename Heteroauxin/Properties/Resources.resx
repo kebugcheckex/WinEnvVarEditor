@@ -205,4 +205,10 @@
   <data name="StatusLabel_Not_Valid" xml:space="preserve">
     <value>The highlighted values are not valid directories.</value>
   </data>
+  <data name="StatusLabel_Apply_System_Successful" xml:space="preserve">
+    <value>Environment variables are successfully applied to system.</value>
+  </data>
+  <data name="StatusLabel_Appying_System" xml:space="preserve">
+    <value>Applying environment variables to system.</value>
+  </data>
 </root>

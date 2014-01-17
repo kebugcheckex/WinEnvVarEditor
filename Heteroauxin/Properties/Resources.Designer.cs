@@ -290,11 +290,29 @@ namespace Heteroauxin.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Environment variables are successfully applied to system..
+        /// </summary>
+        internal static string StatusLabel_Apply_System_Successful {
+            get {
+                return ResourceManager.GetString("StatusLabel_Apply_System_Successful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Environment variables are successfully applied to the current user..
         /// </summary>
         internal static string StatusLabel_Apply_User_Successful {
             get {
                 return ResourceManager.GetString("StatusLabel_Apply_User_Successful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applying environment variables to system..
+        /// </summary>
+        internal static string StatusLabel_Appying_System {
+            get {
+                return ResourceManager.GetString("StatusLabel_Appying_System", resourceCulture);
             }
         }
         

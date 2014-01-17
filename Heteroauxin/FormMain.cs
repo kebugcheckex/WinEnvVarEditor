@@ -202,8 +202,8 @@ namespace Heteroauxin
             if (listViewVariables.SelectedItems.Count <= 0)
             {
                 MessageBox.Show(
-                    Properties.Resources.FormMain_buttonDirectory_Choose_left,
-                    Properties.Resources.MessageBox_Caution,
+                    Resources.FormMain_buttonDirectory_Choose_left,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -222,8 +222,8 @@ namespace Heteroauxin
             if (e.KeyCode == Keys.Delete)
             {
                 var result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Confirm_Delete,
-                    Properties.Resources.MessageBox_Warning,
+                    Resources.MessageBox_Confirm_Delete,
+                    Resources.MessageBox_Warning,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.No) return;
 
@@ -243,8 +243,8 @@ namespace Heteroauxin
             if (!isSaved)
             {
                 var result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Unsaved_User,
-                    Properties.Resources.MessageBox_Warning,
+                    Resources.MessageBox_Unsaved_User,
+                    Resources.MessageBox_Warning,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.No) return;
             }
@@ -253,8 +253,8 @@ namespace Heteroauxin
             if (!envVariables.LoadVariables())
             {
                 MessageBox.Show(
-                    Properties.Resources.MessageBox_Fail_Load_User,
-                    Properties.Resources.MessageBox_Error,
+                    Resources.MessageBox_Fail_Load_User,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error
                     );
                 return;
@@ -268,8 +268,8 @@ namespace Heteroauxin
             if (!isSaved)
             {
                 var result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Unsaved_System,
-                    Properties.Resources.MessageBox_Caution,
+                    Resources.MessageBox_Unsaved_System,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.No) return;  
             }
@@ -277,8 +277,8 @@ namespace Heteroauxin
             if (!envVariables.LoadVariables())
             {
                 MessageBox.Show(
-                    Properties.Resources.MessageBox_Failed_Load_System,
-                    Properties.Resources.MessageBox_Error,
+                    Resources.MessageBox_Failed_Load_System,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -304,30 +304,30 @@ namespace Heteroauxin
             if (envVariables.CurrentTarget != EnvironmentVariableTarget.User)
             {
                 result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Not_User,
-                    Properties.Resources.MessageBox_Caution,
+                    Resources.MessageBox_Not_User,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.No) return;
             }
 
             result = MessageBox.Show(
-                Properties.Resources.MessageBox_Apply_User,
-                Properties.Resources.MessageBox_Warning,
+                Resources.MessageBox_Apply_User,
+                Resources.MessageBox_Warning,
                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (result == DialogResult.No) return;
 
-            toolStripStatusLabel.Text = Properties.Resources.StatusLabel_Appying_User;
+            toolStripStatusLabel.Text = Resources.StatusLabel_Appying_User;
             bool isSuccess = envVariables.ApplyEnvironmentVariables(EnvironmentVariableTarget.User);
             if (isSuccess)
             {
-                toolStripStatusLabel.Text = Properties.Resources.StatusLabel_Apply_User_Successful;
+                toolStripStatusLabel.Text = Resources.StatusLabel_Apply_User_Successful;
                 isSaved = true;
             }
             else
             {
                 MessageBox.Show(
-                    Properties.Resources.MessageBox_Failed_Apply,
-                    Properties.Resources.MessageBox_Error,
+                    Resources.MessageBox_Failed_Apply,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -336,22 +336,22 @@ namespace Heteroauxin
         {
             if (listViewVariables.Items.Count <= 0) return;
             DialogResult result = MessageBox.Show(
-                Properties.Resources.MessageBox_Apply_System,
-                Properties.Resources.MessageBox_Warning,
+                Resources.MessageBox_Apply_System,
+                Resources.MessageBox_Warning,
                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (result == DialogResult.No) return;
 
             bool isSuccess = envVariables.ApplyEnvironmentVariables(EnvironmentVariableTarget.Machine);
             if (isSuccess)
             {
-                toolStripStatusLabel.Text = Properties.Resources.StatusLabel_Apply_User_Successful;
+                toolStripStatusLabel.Text = Resources.StatusLabel_Apply_User_Successful;
                 isSaved = true;
             }
             else
             {
                 MessageBox.Show(
-                    Properties.Resources.MessageBox_Failed_Apply,
-                    Properties.Resources.MessageBox_Error,
+                    Resources.MessageBox_Failed_Apply,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -362,8 +362,8 @@ namespace Heteroauxin
             if (!isSaved)
             {
                 result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Unsaved_New,
-                    Properties.Resources.MessageBox_Caution,
+                    Resources.MessageBox_Unsaved_New,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.No) return;
             }
@@ -372,8 +372,8 @@ namespace Heteroauxin
             bool isSuccess = envVariables.LoadFromFile(openFileDialog.FileName);
             if (!isSuccess)
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Failed_Load_File,
-                    Properties.Resources.MessageBox_Error,
+                MessageBox.Show(Resources.MessageBox_Failed_Load_File,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -385,7 +385,7 @@ namespace Heteroauxin
         {
             if (envVariables.IsNullOrEmpty())
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Nothing_Save);
+                MessageBox.Show(Resources.MessageBox_Nothing_Save);
                 return;
             }
 
@@ -394,8 +394,8 @@ namespace Heteroauxin
             bool isSuccess = envVariables.ExportToFile(saveFileDialog.FileName);
             if (!isSuccess)
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Failed_Export,
-                    Properties.Resources.MessageBox_Error,
+                MessageBox.Show(Resources.MessageBox_Failed_Export,
+                    Resources.MessageBox_Error,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -409,8 +409,8 @@ namespace Heteroauxin
             if (!isSaved)
             {
                 var result = MessageBox.Show(
-                    Properties.Resources.MessageBox_Unsaved_Exit,
-                    Properties.Resources.MessageBox_Warning,
+                    Resources.MessageBox_Unsaved_Exit,
+                    Resources.MessageBox_Warning,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.No) return;  
             }
@@ -426,14 +426,14 @@ namespace Heteroauxin
         {
             if (envVariables.IsNullOrEmpty())
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Not_Loaded,
-                    Properties.Resources.MessageBox_Caution,
+                MessageBox.Show(Resources.MessageBox_Not_Loaded,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (isNewVariable)
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Already_New);
+                MessageBox.Show(Resources.MessageBox_Already_New);
                 return;
             }
             isNewVariable = true;
@@ -450,8 +450,8 @@ namespace Heteroauxin
         {
             if (listViewVariables.SelectedItems.Count <= 0) return;
             DialogResult result = MessageBox.Show(
-                    "Do you really want to delete the selected environment variable(s)?",
-                    Properties.Resources.MessageBox_Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    Resources.MessageBox_Confirm_Delete,
+                    Resources.MessageBox_Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.No) return;
             ListView.SelectedListViewItemCollection selectedItems= listViewVariables.SelectedItems;
             foreach (ListViewItem item in selectedItems)
@@ -466,8 +466,8 @@ namespace Heteroauxin
         {
             if (listViewValues.SelectedItems.Count <= 0) return;
             DialogResult result = MessageBox.Show(
-                    "Do you really want to delete the selected environment value(s)?",
-                    Properties.Resources.MessageBox_Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    Resources.MessageBox_Confirm_Delete,
+                    Resources.MessageBox_Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.No) return;
             string name = listViewVariables.SelectedItems[0].Text;
             ListView.SelectedListViewItemCollection selectedItems = listViewValues.SelectedItems;
@@ -483,19 +483,24 @@ namespace Heteroauxin
         {
             if (envVariables.IsNullOrEmpty())
             {
-                MessageBox.Show(Properties.Resources.MessageBox_Not_Loaded, "Caution",
+                MessageBox.Show(
+                    Resources.MessageBox_Not_Loaded,
+                    Resources.MessageBox_Caution,
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
             if (listViewVariables.Items.Count <= 0 || listViewVariables.SelectedItems.Count <= 0)
             {
-                MessageBox.Show(Properties.Resources.FormMain_buttonDirectory_Choose_left);
+                MessageBox.Show(Resources.FormMain_buttonDirectory_Choose_left);
                 return;
             }
             if (isNewValue)
             {
-                MessageBox.Show("You have added a new value. You cannot add more before you set its value.");
+                MessageBox.Show(
+                    Resources.MessageBox_Already_New,
+                    Resources.MessageBox_Caution,
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             isNewValue = true;
             listViewValues.Items.Add(" (New value)");
@@ -523,17 +528,12 @@ namespace Heteroauxin
             }
             if (isValid)
             {
-                toolStripStatusLabel.Text = Properties.Resources.StatusLabel_Is_Valid;
+                toolStripStatusLabel.Text = Resources.StatusLabel_Is_Valid;
             }
             else
             {
-                toolStripStatusLabel.Text = Properties.Resources.StatusLabel_Not_Valid;
+                toolStripStatusLabel.Text = Resources.StatusLabel_Not_Valid;
             }
-        }
-
-        private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

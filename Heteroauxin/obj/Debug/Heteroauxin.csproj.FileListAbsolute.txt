@@ -12,3 +12,8 @@ F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.csproj.GenerateResource.
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\zh-CN\Heteroauxin.resources.dll
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.exe
 F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.pdb
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\Heteroauxin.exe.manifest
+F:\CSharp\Heteroauxin\Heteroauxin\bin\Debug\Heteroauxin.application
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.csprojResolveAssemblyReference.cache
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.exe.manifest
+F:\CSharp\Heteroauxin\Heteroauxin\obj\Debug\Heteroauxin.application
