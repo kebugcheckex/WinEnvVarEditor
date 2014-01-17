@@ -344,7 +344,7 @@ namespace Heteroauxin
             bool isSuccess = envVariables.ApplyEnvironmentVariables(EnvironmentVariableTarget.Machine);
             if (isSuccess)
             {
-                toolStripStatusLabel.Text = Resources.StatusLabel_Apply_User_Successful;
+                toolStripStatusLabel.Text = Resources.StatusLabel_Apply_System_Successful;
                 isSaved = true;
             }
             else
